@@ -3,55 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>presentation</title>
-    <link rel="icon" href="https://github.com/lordsaketh/my-ppt/blob/main/favicon-32x32.png?raw=true" type="image/png">
+    <title>AI Business Automation</title>
     <style>
+        /* Fonts & Colors */
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            color: #ffffff;
-            background-image: url('https://www.giantfreakinrobot.com/wp-content/uploads/2023/08/demon-slayer-1.jpg'); /* Replace with actual image URL */
-            background-attachment: fixed;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
+            font-family: 'Poppins', sans-serif;
+            background: #0f0f0f;
+            color: #fff;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
-            padding: 20px;
-            border-radius: 10px;
         }
-        h1 {
-            margin: 0;
-            font-size: 2em;
-            color: #ffcc00;
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 20px;
+            background: linear-gradient(to right, #000428, #004e92);
         }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            color: #ffffff;
-            background-color: #ff5733;
-            text-decoration: none;
-            border-radius: 5px;
+
+        .hero h1 {
+            font-size: 55px;
             font-weight: bold;
+            background: linear-gradient(to right, cyan, #00ff99);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 15px;
         }
-        a:hover {
-            background-color: #c70039;
+
+        .hero p {
+            font-size: 22px;
+            max-width: 850px;
+            margin: auto;
+            color: #ddd;
         }
+
+        /* Video Section */
+        .video-container {
+            margin: 50px 0;
+        }
+
+        .video-container video {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
+        }
+
+        /* Services */
+        .services {
+            padding: 60px 20px;
+        }
+
+        .services h2 {
+            font-size: 40px;
+            color: cyan;
+        }
+
+        .services p {
+            font-size: 20px;
+            max-width: 900px;
+            margin: auto;
+            line-height: 1.7;
+            color: #bbb;
+        }
+
+        /* Features */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 50px;
+        }
+
+        .feature-box {
+            background: #222;
+            padding: 40px;
+            border-radius: 15px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-box img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .feature-box h3 {
+            color: cyan;
+            margin-bottom: 10px;
+        }
+
+        .feature-box p {
+            color: #bbb;
+            font-size: 18px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 60px 20px;
+            background: #181818;
+        }
+
+        .testimonials h2 {
+            font-size: 38px;
+            color: cyan;
+        }
+
+        .testimonial {
+            max-width: 700px;
+            margin: 30px auto;
+            font-size: 18px;
+            color: #ddd;
+            font-style: italic;
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 70px 20px;
+        }
+
+        .pricing h2 {
+            font-size: 42px;
+            color: cyan;
+        }
+
+        .price-box {
+            background: #222;
+            padding: 40px;
+            border-radius: 15px;
+            width: 300px;
+            margin: 20px auto;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+
+        .price-box h3 {
+            color: cyan;
+            margin-bottom: 15px;
+        }
+
+        .price-box p {
+            color: #bbb;
+            font-size: 18px;
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 70px 20px;
+        }
+
+        .faq h2 {
+            font-size: 38px;
+            color: cyan;
+        }
+
+        .faq p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            color: #bbb;
+        }
+
+        /* Call to Action */
+        .cta {
+            margin: 50px 0;
+        }
+
+        .cta a {
+            text-decoration: none;
+            background-color: cyan;
+            color: #111;
+            padding: 20px 50px;
+            border-radius: 12px;
+            font-size: 22px;
+            font-weight: bold;
+            box-shadow: 0 5px 20px rgba(0, 255, 255, 0.5);
+            transition: all 0.3s;
+        }
+
+        .cta a:hover {
+            background-color: #00e6e6;
+            box-shadow: 0 5px 25px rgba(0, 255, 255, 0.7);
+        }
+
+        /* Footer */
+        .footer {
+            background: #111;
+            padding: 30px;
+            margin-top: 50px;
+            font-size: 18px;
+            color: #888;
+        }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to my presentation</h1>
-       
-        <a href="wepix.pdf">MY PPT</a> <!-- Replace with actual link -->
-        <a href="https://drive.google.com/file/d/1oPRbJS6oE8EfuEmZZ4qWcxje32_wKeNb/view?usp=drive_link" target="_blank">NOTES</a> <!-- Replace with actual link -->    
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Revolutionizing lives with AI pendant</h1>
+        <p>Pendant is an elegant, lightweight wearable that remembers what you say throughout the day, from in-person meetings, impromptu conversations, and personal insights. <br> 
+        Our AI-powered solutions take your business to the next level.</p>
     </div>
+
+    <!-- Product Video -->
+    <div class="video-container">
+        <video controls autoplay loop muted style="width: 65%; max-width: 600px; border-radius: 15px; box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);">
+            <source src="https://www.limitless.ai/media/pendant/black/pendant.webm" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+        <h2>Why Choose AI Automation?</h2>
+        <p>From automating workflows to enhancing decision-making, our AI-driven technology helps businesses reduce costs and increase productivity.</p>
+    </div>
+
+    <!-- Features -->
+    <div class="features">
+        <div class="feature-box">
+            <img src="https://source.unsplash.com/100x100/?ai" alt="AI Insights">
+            <h3>AI-Powered Insights</h3>
+            <p>Gain real-time data-driven insights.</p>
+        </div>
+        <div class="feature-box">
+            <img src="https://source.unsplash.com/100x100/?automation" alt="Workflow Automation">
+            <h3>Workflow Automation</h3>
+            <p>Enhance productivity with smart automation.</p>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p class="testimonial">"AI automation transformed our business. We cut costs by 40%!" - Alex R.</p>
+    </div>
+
+    <!-- Pricing -->
+    <div class="pricing">
+        <h2>Our Pricing Plans</h2>
+        <div class="price-box">
+            <h3>Basic Plan</h3>
+            <p>AI-powered automation starting at $49/month.</p>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p>How does AI automation help businesses? Our AI tools automate workflows, optimize processes, and increase efficiency.</p>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta">
+        <a href="contact.html">Get Started</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Contact us: support@yourbusiness.com | © 2025 AI Automation Co.
+    </div>
+
 </body>
 </html>
